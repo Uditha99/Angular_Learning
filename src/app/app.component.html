@@ -1,7 +1,8 @@
 <header>
   <button routerLink="/home">Home</button>
-  <button routerLink="/student">Customer</button>
+  <button routerLink="/student/{{value}}">Customer</button>
   <button routerLink="/order">Order</button>
+  | <input type="text" [(ngModel)]="value" placeholder="Enter hear">
 
 </header>
 

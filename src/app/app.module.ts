@@ -7,6 +7,10 @@ import { StudentsComponent } from './students/students.component';
 import { OrderComponent } from './order/order.component';
 import {AppRoutingModule} from "./app-routing.module";
 import { NotFoundPageComponent } from './not-found-page/not-found-page.component';
+import {FormsModule} from "@angular/forms";
+import { NewComponent } from './order/inner-iteams/new/new.component';
+import { DeleteComponent } from './order/inner-iteams/delete/delete.component';
+import { GetComponent } from './order/inner-iteams/get/get.component';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { NotFoundPageComponent } from './not-found-page/not-found-page.component
     HomeComponent,
     StudentsComponent,
     OrderComponent,
-    NotFoundPageComponent
+    NotFoundPageComponent,
+    NewComponent,
+    DeleteComponent,
+    GetComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
